@@ -123,6 +123,7 @@ function istanbulPlugin(opts?: IstanbulPluginOptions): Plugin {
     name: 'vite:istanbul',
     transform: createTransform(opts),
     configureServer: createConfigureServer(),
+    enforce: 'post'
   };
 }
 
